@@ -16,6 +16,6 @@ project(':common').repositories {
 project(':common').dependencies {
   compileOnly("cc.tweaked:cc-tweaked-$minecraft_version-common-api:$cct_version")
   implementation("cc.tweaked:cc-tweaked-$minecraft_version-common:$cct_version")
-  implementation("io.github.jaredmdobson:concentus:1.0.2")
+  jarJar(implementation("io.github.jaredmdobson:concentus:1.0.2"))
   additionalRuntimeClasspath("io.github.jaredmdobson:concentus:1.0.2")
 }
