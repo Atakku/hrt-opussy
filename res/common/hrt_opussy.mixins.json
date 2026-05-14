@@ -1,0 +1,15 @@
+{
+  "required": true,
+  "package": "zone.hrt.opussy.mixin",
+  "compatibilityLevel": "JAVA_21",
+  "client": [
+    "MixinDfpwmStream"
+  ],
+  "mixins": [
+    "AccessorSpeakerPeripheral",
+    "MixinDfpwmState"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

@@ -1,14 +1,7 @@
-pluginManagement {
-    repositories {
-        maven { url "https://maven.fabricmc.net/" }
-        maven { url "https://maven.architectury.dev/" }
-        maven { url "https://files.minecraftforge.net/maven/" }
-        gradlePluginPortal()
-    }
-}
+// Copyright 2026 Atakku <https://atakku.dev>
+//
+// This project is dual licensed under MIT and Apache.
 
-rootProject.name = 'ccspeakercodecs'
+ext.targets = ['common': []]
 
-include 'common'
-include 'fabric'
-include 'forge'
+apply from: 'https://raw.githubusercontent.com/Atakku/gradle/v51/common_settings.gradle'
